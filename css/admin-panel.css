@@ -1,0 +1,88 @@
+/*/////////////////////////////////////////////////
+ CUSTOM ADMIN PANEL CSS
+////////////////////////////////////////////////*/
+a, input[type=checkbox]:checked:before { color: #1DB954; }
+a:active, a:hover { color: #1DB954; }
+input[type="checkbox"], input[type="radio"]{float: left;margin: 4px 10px 0 0;}
+.form-table{ margin-bottom: 26px !important; }
+.form-table th { width: 150px; }
+h2 { margin: 0; }
+table { border-collapse: collapse; }
+.info-column { float: left; max-width: 65%; }
+.side-info-column { float: right; width: 100%; max-width: 35%; }
+.side-info-column .section-title { padding: 9px 10px !important; }
+.side-info-column .credits { margin: 20px 0 0; }
+.side-info-column .inside { display: block; padding: 10px; }
+.side-info-column .inside a img { width: 100%; max-width: 200px; display: block; }
+.section-title { background: #f4fff8; border: 1px solid #1DB954; padding: 6px 10px !important; font-size: 19px !important; margin: 5px 0; }
+.form-table td { padding: 10px .5em; }
+.table-group th { width: auto; }
+.table-group td, .table-group th { border: 1px solid #cfcfcf; border-collapse: collapse; padding: .5em !important; }
+.plain-list { margin: 0; }
+#poststuff .inside { word-wrap: break-word; }
+.admin_group label { float: left; min-width: 90px; max-width: 90px; margin: 0 20px 0 0; }
+.admin_group li { margin: 0 0 15px; }
+.admin_group li label {  min-width: 180px; max-width: 180px; }
+h2.section-title strong { font-size: 12px; font-style: italic; }
+code, kbd { font-size: 11px; font-weight: bold; }
+
+.file_upload::-webkit-file-upload-button { visibility: hidden; }
+.file_upload:hover::before { border-color: black; }
+.file_upload:active::before { background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); }
+input[type=file] { position: relative; -webkit-box-sizing: border-box; border: 1px solid #cfcfcf; vertical-align: middle; display: block; height: 30px; }
+input[type=file]::-webkit-file-upload-button { border: none; margin: 0; padding: 0; -webkit-appearance: none; width: 0 }
+.form-wrap p, p.description, p.help, span.description {
+  font-size: 10px;
+  font-weight: bold;
+}
+.form-wrap p, p.description, p.help, span.description { display: block; padding: 10px 0 0; }
+.wp-core-ui .button-primary {
+  background: #1DB954;
+  border-color: #1DB954 #006d2e #006d2e;
+  color: #fff;
+  -webkit-box-shadow: 0 1px 0 #1DB954;
+  box-shadow: 0 1px 0 #1DB954;
+  text-shadow: 0 -1px 1px #1DB954, 1px 0 1px #1DB954, 0 1px 1px #1DB954, -1px 0 1px #1DB954;
+}
+.wp-core-ui .button-primary:focus, 
+.wp-core-ui .button-primary:hover {
+  background: #1cab4e;
+  border-color: #006d2e;
+  color: #fff;
+  -webkit-box-shadow: 0 1px 0 #1DB954;
+  box-shadow: 0 1px 0 #1DB954;
+}
+
+/* "x::-webkit-file-upload-button" forces the rules to only apply to browsers that support this pseudo-element */
+x::-webkit-file-upload-button, input[type=file]:after {
+  content: 'Browse...';
+  display: inline-block;
+  left: 100%;
+  position: relative;
+  -webkit-appearance: button;
+  text-decoration: none;
+  font-size: 13px;
+  margin: -4px 0 0 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-appearance: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	color: #555;
+	border-color: #ccc;
+	background: #f7f7f7;
+	-webkit-box-shadow: 0 1px 0 #ccc;
+	box-shadow: 0 1px 0 #ccc;
+	vertical-align: top;
+}
+.js-list { margin: 20px 0; }
+.js-list li { border: 1px solid #cfcfcf; padding: .5em 1em; display: block; margin: 0; max-width: 328px; overflow: hidden; }
+.js-list li .remove { float: right; }
+#small-loader { display: inline-block; padding: 6px 5px 0; float: right; vertical-align: middle; }
+#file_upload { margin: 20px 0 10px; }
