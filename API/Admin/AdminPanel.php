@@ -15,7 +15,7 @@ class AdminPanel {
 	function __construct() {
 		$this->isPage = strpos( $_SERVER['REQUEST_URI'], NewsFeed::$settingsPage );
 
-		$this->adminOptions = new AdminOptions( $this );
+		$this->adminOptions = new AdminOptions();
 		$this->setupOptions = get_option( self::$tabs['setup'] );
 
 		add_action( 'admin_menu', array( $this, 'nfSettingsMenu' ) );

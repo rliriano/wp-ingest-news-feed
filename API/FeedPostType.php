@@ -20,8 +20,8 @@ class FeedPostType {
 	 * Register our custom feed Post Type
 	 * @action init
 	 */
-	function registerPostType() {
-		$postLabels = array(
+    function registerPostType() {
+        $postLabels = array(
             'name'               => 'News Feed',
             'singular_name'      => 'News Feed',
             'add_new'            => 'Add Feed',
@@ -54,39 +54,38 @@ class FeedPostType {
             //'rewrite'             => [ 'slug' => '%feeds%' ],
         );
         register_post_type( NewsFeed::$postType, $postArgs );
-	}
+    }
 
 
     /**
-	 * Output custom columns for Genre Post Type
-	 * @filter manage_edit-{post-type}_columns
-	 * @return columns
-	 */
-	function registerCustomColumns( $columns ) {
-		$columns = array(
-			'cb'       => '<input type=\"checkbox\" />',
-			'title'    => 'Title',
-			'linkurl'  => 'Permalink',
+     * Output custom columns for Genre Post Type
+     * @filter manage_edit-{post-type}_columns
+     * @return columns
+     */
+    function registerCustomColumns( $columns ) {
+        $columns = array(
+            'cb'       => '<input type=\"checkbox\" />',
+            'title'    => 'Title',
+            'linkurl'  => 'Permalink',
             'ID'       => 'ID',
-			'date'     => 'Date',
-		);
-		return $columns;
-	}
+            'date'     => 'Date',
+        );
+        return $columns;
+    }
 
     /**
-	 * Custom column content for Genre Post Type
-	 * @action manage_{post-type}_posts_custom_column
-	 */
-	function setCustomColumnContent( $column ) {
-		global $post;
+     * Custom column content for Genre Post Type
+     * @action manage_{post-type}_posts_custom_column
+     */
+    function setCustomColumnContent( $column ) {
+        global $post;
 
-		if ( 'ID' == $column ){
-			echo $post->ID;
-		} elseif ( 'linkurl' == $column ) {
-			echo '<a href="'.get_the_permalink( $post->ID ).'"/ target="_blank">'.get_the_permalink( $post->ID ).'</a>';
-		}
-		
-	}
+        if ( 'ID' == $column ){
+            echo $post->ID;
+        } elseif ( 'linkurl' == $column ) {
+            echo '<a href="'.get_the_permalink( $post->ID ).'"/ target="_blank">'.get_the_permalink( $post->ID ).'</a>';
+        }
+    }
 
 
     /*

@@ -11,7 +11,7 @@ class XMLParcer {
     * Feed logger
     * @return
     */
-	public static function log( $msg ) {
+    public static function log( $msg ) {
         date_default_timezone_set( 'America/New_York' );
 
         $path = NF_API_DIR . '/Log';
@@ -23,7 +23,7 @@ class XMLParcer {
         $msgData = $_SERVER['REMOTE_ADDR'] . ' - [' . date( 'm-d-Y h:i:s A', time() ) . '] ' . $msg . "\n";
         // if you don't add `FILE_APPEND`, the file will be erased each time you add a log
         file_put_contents( $filename, $msgData, FILE_APPEND );
-	}
+    }
 
     /*
     * Make the API call
